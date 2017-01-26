@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="css/style.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
     <script type="text/javascript">
 	    var map = new ymaps.Map("map", {
@@ -15,12 +16,12 @@
 
   <body>
 		<header>
-		 	<div class="container">
-			 	<div class="gray-wrapper">	
+			<div class="gray-wrapper">
+		 		<div class="container">
 				 	<div class="logo">
 	          <a href="index.html">
-	            <img src="http://placehold.it/150x100" alt="logo-picture" width="160px" height="70px">
-	          </a> 
+			        <img src="img/logo.png" alt="logo-picture" width="161px" height="65px">
+			      </a> 
 			    </div>
 		        <nav class="main-navigation">
 		          <ul>
@@ -41,51 +42,55 @@
 		        <div class="cart-block">
 		          <a class="cart" href="#">Корзина</a>
 		        </div>
-		    </div>
+				</div>
 	    </div>
 		</header>
-
-		<main class="container">
-			<!--Слайдер начало-->
-			<div class="slider-section">
-				<div class="item active">
-					<img src="http://placehold.it/150x100" alt="slider-image" width="100%" height="430px">
-					<div class="slider-description-container">
-						<h1>Долго, дорого,  скрупулезно.</h1>
-						<div class="slider-description">
-							<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+		
+		<main>
+			<div class="gray-wrapper">
+				<div class="container">
+					<!--Слайдер начало-->
+					<div class="slider-section">
+						<div class="item active">
+							<img src="img/slide-1.jpg" alt="slider-image" width="100%" height="416px">
+							<div class="slider-description-container">
+								<h1>Долго, дорого,  скрупулезно.</h1>
+								<div class="slider-description">
+									<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+								</div>
+								<a href="" class="learn-more-button">Узнать больше</a>
+							</div>
 						</div>
-						<a href="" class="learn-more-button">Узнать больше</a>
+						<div class="item">
+							<img src="img/slide-2.jpg" alt="slider-image" width="100%" height="438px">
+							<div class="slider-description-container">
+								<h1>Любим математику как никто другой</h1>
+								<div class="slider-description">
+									<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+								</div>
+								<a href="" class="learn-more-button">Узнать больше</a>
+							</div>
+						</div>
+						<div class="item">
+							<img src="img/slide-3.jpg" alt="slider-image" width="100%" height="417px">
+							<div class="slider-description-container">
+								<h1>Только ночь,только хардкор</h1>
+								<div class="slider-description">
+									<p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
+								</div>
+								<a href="" class="learn-more-button">Узнать больше</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="item">
-					<img src="http://placehold.it/150x100" alt="slider-image" width="100%" height="430px">
-					<div class="slider-description-container">
-						<h1>Любим математику как никто другой</h1>
-						<div class="slider-description">
-							<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-						</div>
-						<a href="" class="learn-more-button">Узнать больше</a>
-					</div>
-				</div>
-				<div class="item">
-					<img src="http://placehold.it/150x100" alt="slider-image" width="100%" height="430px">
-					<div class="slider-description-container">
-						<h1>Только ночь,только хардкор</h1>
-						<div class="slider-description">
-							<p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-						</div>
-						<a href="" class="learn-more-button">Узнать больше</a>
-					</div>
-				</div>
+				<!--Слайдер конец-->
 			</div>
-			<!--Слайдер конец-->
 			<!--Секция заказа начало-->
 			<div class="order-section">
 
 				<div class="order-section-block red">
 					<div class="order-section-img">
-						<img src="http://placehold.it/150x100" alt="block-image" width="300px" height="145px">
+						<img src="img/illustration-1.jpg" alt="block-image" width="300px" height="146px">
 					</div>
 					<div class="order-section-header">
 						Веб-Сайты
@@ -100,7 +105,7 @@
 
 				<div class="order-section-block green">
 					<div class="order-section-img">
-						<img src="http://placehold.it/150x100" alt="block-image" width="300px" height="145px">
+						<img src="img/illustration-2.jpg" alt="block-image" width="300px" height="146px">
 					</div>
 					<div class="order-section-header">
 						Приложения
@@ -115,7 +120,7 @@
 
 				<div class="order-section-block yellow">
 					<div class="order-section-img">
-						<img src="http://placehold.it/150x100" alt="block-image" width="300px" height="145px">
+						<img src="img/illustration-3.jpg" alt="block-image" width="300px" height="146px">
 					</div>
 					<div class="order-section-header">
 						Презентации
@@ -149,7 +154,7 @@
 				<div class="about-us-metrics-block">
 
 					<div class="metrics-image-container">
-						<img src="http://placehold.it/150x100" alt="Nerds-fumky-logo" width="370px" height="225px">
+						<img src="img/nerds-illustration-img.jpg" alt="Nerds-funky-logo" width="360px" height="208px">
 					</div>
 					<div class="metrics-slogan">C 2004 года любим точность во всем</div>
 
@@ -174,16 +179,16 @@
 			<!--Секция о наших проектах начало-->
 			<div class="our-projects-section">
 				<div class="our-projects-block first">
-					<img src="http://placehold.it/150x100" alt="HTML academy">
+					<img src="img/html-logo.png" alt="HTML academy" width="199px" height="68px">
 				</div>
 				<div class="our-projects-block second">
-					<img src="http://placehold.it/150x100" alt="Borodinsky">
+					<img src="img/borodinsky-logo.png" alt="Borodinsky" width="209px" height="90px">
 				</div>
 				<div class="our-projects-block third">
-					<img src="http://placehold.it/150x100" alt="Pink">
+					<img src="img/pink-logo.png" alt="Pink" width="185px" height="52px">
 				</div>
 				<div class="our-projects-block fourth">
-					<img src="http://placehold.it/150x100" alt="Mishka">
+					<img src="img/mishka.png" alt="Mishka" width="173px" height="84px;">
 				</div>
 			</div>
 			<!--Секция о наших проектах конец-->
