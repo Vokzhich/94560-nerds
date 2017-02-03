@@ -5,45 +5,40 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс-Каталог</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=tr_TR" type="text/javascript"></script>
-   	<script type="text/javascript">
-	    var map = new ymaps.Map("map", {
-	            center: [55.76, 37.64], 
-	            zoom: 7
-	        });
-		</script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
   </head>
 
   <body>
 
 		<header>
 		 	<div class="gray-wrapper">
-			 	<div class="container">	
+		 		<div class="container clearfix">
 				 	<div class="logo">
-			      <a href="index.html">
-			        <img src="img/logo.png" alt="logo-picture" width="161px" height="65px">
+	          <a href="index.html">
+			        <img src="img/logo.png" alt="logo-picture" width="161" height="65">
 			      </a> 
 			    </div>
-	        <nav class="main-navigation">
-	          <ul>
-	            <li>
-	              <a href="#">Студия</a>
-	            </li>
-	            <li>
-	              <a href="#">Клиенты</a>
-	            </li>
-	            <li>
-	              <a href="#">Магазин</a>
-	            </li>
-	            <li>
-	              <a href="#">Контакты</a>
-	            </li>
-	          </ul>
-	        </nav>
+		        <nav class="main-navigation">
+		          <ul>
+		            <li>
+		              <a href="#">Студия</a>
+		            </li>
+		            <li>
+		              <a href="#">Клиенты</a>
+		            </li>
+		            <li class="active">
+		              <a href="#">Магазин</a>
+		            </li>
+		            <li>
+		              <a href="#">Контакты</a>
+		            </li>
+		          </ul>
+		        </nav>
 		        <div class="cart-block">
 		          <a class="cart" href="#">Корзина</a>
 		        </div>
-		    </div>
+				</div>
 	    </div>
 		</header>
 
@@ -53,250 +48,275 @@
 					<div class="gray-top-section">
 						<h1>Магазин готовых шаблонов</h1>
 					</div>
-			      <!-- Боковое меню фильтрации начало -->
-				    <div class="filter-section">
-				    	<form action="" id="filter-section-form">
-					    	<span>Стоимость</span>
-					    	<div class="range-container">
-					    		<input type="range">
-					    		<div class="range-from">
-					    			<div class="from">от</div>
-					    			<div class="numerals">0</div>
-					    		</div>
-					    		<div class="range-till">
-					    			<div class="from">до</div>
-					    			<div class="numerals">15000</div>
-					    		</div>
-					    	</div>
-				        <div class="product-types">
-				        	<h3>Сетка:</h3>
-			           	<label>
-			                <input type="radio" name="adapt" value="1">Адаптивная
-			            </label>
-			            <label>
-			                <input type="radio" name="fix" value="2">Фиксированная
-			            </label>
-			            <label>
-			                <input type="radio" name="flex" value="3">Резиновая
-			            </label>
-			            <div class="product-features">
-			            	<h3>Особенности:</h3>
-				             <label>
-				                <input type="checkbox" checked>Слайдер
-				            </label>
-				             <label>
-				                <input type="checkbox" checked>Блок преимуществ
-				            </label>
-				            <label>
-				                <input type="checkbox" checked>Новости
-				            </label>
-				            <label>
-				                <input type="checkbox" checked>Галлерея
-				            </label>
-				            <label>
-				                <input type="checkbox" checked>Корзина
-				            </label>
-			        		</div>
-			        		<input type="submit" value="Показать">
-				        </div>
-				      </form>	
-				    </div>
-			      <!-- Боковое меню фильтрации конец -->
+				</div>	
+			</div>	
+      <div class="container clearfix"><!-- Боковое меню фильтрации начало -->
+      		    <div class="filter-section">
+      		    	<form action="" id="filter-section-form">
+      			    	<h3>Стоимость</h3>
+      			    	<div class="range-container clearfix">
+      			    		<input type="range">
+      			    		<div class="range-from clearfix">
+      			    			<div class="from">от</div>
+      			    			<div class="numerals">0</div>
+      			    		</div>
+      			    		<div class="range-till clearfix">
+      			    			<div class="from">до</div>
+      			    			<div class="numerals">15000</div>
+      			    		</div>
+      			    	</div>
+      		        <div class="product-types">
+      		        	<h3>Сетка:</h3>
 
-			      <!--Каталог товаров начало-->
-			      <div class="main-products-catalog">
-			      	<div class="main-products-header">
-			      		<h3>Сортировать</h3>
-			      		<div class="main-products-filter">
-			      			<button>По цене</button>
-			      			<button>По типу</button>
-			      			<button>По названию</button>
-			      			<div class="main-products-filter-switch up">
-			      				<span></span>
-			      			</div>
-			      			<div class="main-products-filter-switch down">
-			      				<span></span>
-			      			</div>
-			      		</div>
-			      	</div>
+			      	     	<div class="product-types-row">
+			      	     		<label>
+			      	     			<input type="radio" name="adapt" value="1"><span>Адаптивная</span>
+			      	     		</label>
+			      	     	</div>
 
-			        <div class="catalog-item-wrapper">
-			          <div class="image-holder">
-			            <img src="img/Sedona.jpg" alt="catalog-picture" width="360px" height="616px">
-			          </div>
-			          <div class="catalog-item-modal">
-			          	<div class="catalog-item-modal-header">
-			          		Sedona
-			          	</div>
-			          	<div class="catalog-item-modal-body">
-			          		Информационный сайт  для туристов
-			          	</div>
-			          	<button> 9 900 руб.</button>
-			          </div>
-			        </div>
+			      	      <div class="product-types-row">
+			      	      	<label>
+			      	      	    <input type="radio" name="fix" value="2"><span>Фиксированная</span>
+			      	      	</label>
+			      	      </div>
 
-			        <div class="catalog-item-wrapper">
-			          <div class="image-holder">
-			            <img src="img/aplus.jpg" alt="catalog-picture" width="360px" height="616px">
-			          </div>
-			          <div class="catalog-item-modal">
-			          	<div class="catalog-item-modal-header">
-			          		A Plus
-			          	</div>
-			          	<div class="catalog-item-modal-body">
-			          		Лендинг курсов повышения квалификации
-			          	</div>
-			          	<button> 9 900 руб.</button>
-			          </div>
-			        </div>
+			      	      <div class="product-types-row">
+			      	      	<label>
+			      	      	    <input type="radio" name="flex" value="3"><span>Резиновая</span>
+			      	      	</label>
+			      	      </div>
 
-			        <div class="catalog-item-wrapper">
-			          <div class="image-holder">
-			            <img src="img/kvast.jpg" alt="catalog-picture" width="360px" height="616px">
-			          </div>
-			          <div class="catalog-item-modal">
-			          	<div class="catalog-item-modal-header">
-			          		Кваст
-			          	</div>
-			          	<div class="catalog-item-modal-body">
-			          		Промо-сайт производителя крафтового кваса
-			          	</div>
-			          	<button> 9 900 руб.</button>
-			          </div>
-			        </div>
+			      	      <div class="product-features">
+			      	      	<h3>Особенности:</h3>
+			      		             <div class="product-types-row">
+			      		             	<label>
+			      		             	   <input type="checkbox" checked>Слайдер
+			      		             				      		            </label>
+			      		             </div>
 
-			        <div class="catalog-item-wrapper">
-			          <div class="image-holder">
-			            <img src="img/borodinski.jpg" alt="catalog-picture" width="360px" height="616px">
-			          </div>
-			          <div class="catalog-item-modal">
-			          	<div class="catalog-item-modal-header">
-			          		Barbershop
-			          	</div>
-			          	<div class="catalog-item-modal-body">
-			          		Сайт салоны красоты. Для мужчин, да.
-			          	</div>
-			          	<button> 9 900 руб.</button>
-			          </div>
-			        </div>
+			      		             <div class="product-types-row">
+			      		             	<label>
+			      		             	   <input type="checkbox" checked>Блок преимуществ
+			      		             				      		            </label>
+			      		             </div>
 
-			        <div class="catalog-item-wrapper">
-			          <div class="image-holder">
-			            <img src="img/mishka.jpg" alt="catalog-picture" width="360px" height="616px">
-			          </div>
-			          <div class="catalog-item-modal">
-			          	<div class="catalog-item-modal-header">
-			          		Mishka
-			          	</div>
-			          	<div class="catalog-item-modal-body">
-			          		Интернет-магазин  вязаных игрушек
-			          	</div>
-			          	<button> 9 900 руб.</button>
-			          </div>
-			        </div>
+			      		            <div class="product-types-row">
+			      		            	<label>
+			      		            	    <input type="checkbox" checked>Новости
+			      		            	</label>
+			      		            </div>
 
-			        <div class="catalog-item-wrapper">
-			          <div class="image-holder">
-			            <img src="img/pink.jpg" alt="catalog-picture" width="360px" height="616px">
-			          </div>
-			          <div class="catalog-item-modal">
-			          	<div class="catalog-item-modal-header">
-			          		Pink App
-			          	</div>
-			          	<div class="catalog-item-modal-body">
-			          		Продуктовый лендинг приложения для iOS и Android
-			          	</div>
-			          	<button> 9 900 руб.</button>
-			          </div>
-			        </div>
+			      		            <div class="product-types-row">
+			      		            	<label>
+			      		            	    <input type="checkbox" checked>Галлерея
+			      		            	</label>
+			      		            </div>
 
-			        <nav>
-			          <ul>
-			            <li>
-			            	<span class="active">1</span>
-			            </li>
-			            <li>
-			            	<a href="#">2</a>
-			            </li>
-			            <li>
-			            	<a href="#">3</a>
-			            </li>
-			            <li>
-			            	<a href="#">Следущая</a>
-			            </li>
-			          </ul>
-			        </nav>
-			      </div>
-			      <!--Каталог товаров конец-->
+			      		            <div class="product-types-row">
+			      		            	<label>
+			      		            	    <input type="checkbox" checked>Корзина
+			      		            	</label>
+			      		            </div>
+			      	  		</div>
+			      	  		<input type="submit" value="Показать">
+      		        </div>
+      		      </form>	
+      		    </div>
+      	<!-- Боковое меню фильтрации конец -->
+      	
+      	<!--Каталог товаров начало-->
+      	<div class="main-products-catalog clearfix">
+      		<div class="main-products-header clearfix">
+      			<h3>Сортировать</h3>
+      			<div class="main-products-filter">
+      				<button>По цене</button>
+      				<button>По типу</button>
+      				<button>По названию</button>
+      				<div class="main-products-filter-switch up">
+      					<span></span>
+      				</div>
+      				<div class="main-products-filter-switch down">
+      					<span></span>
+      				</div>
+      			</div>
+      		</div>
+      	
+      	  <a href="#" class="catalog-item-wrapper">
+      	    <div class="image-holder">
+      	      <img src="img/Sedona.jpg" alt="catalog-picture" width="360px" height="616px">
+      	    </div>
+      	    <div class="catalog-item-modal">
+      	    	<div class="catalog-item-modal-header">
+      	    		Sedona
+      	    	</div>
+      	    	<div class="catalog-item-modal-body">
+      	    		Информационный сайт  для туристов
+      	    	</div>
+      	    	<button> 9 900 руб.</button>
+      	    </div>
+      	  </a>
+      	
+      	  <a href="#" class="catalog-item-wrapper">
+      	    <div class="image-holder">
+      	      <img src="img/aplus.jpg" alt="catalog-picture" width="360px" height="616px">
+      	    </div>
+      	    <div class="catalog-item-modal">
+      	    	<div class="catalog-item-modal-header">
+      	    		A Plus
+      	    	</div>
+      	    	<div class="catalog-item-modal-body">
+      	    		Лендинг курсов повышения квалификации
+      	    	</div>
+      	    	<button> 9 900 руб.</button>
+      	    </div>
+      	  </a>
+      	
+      	  <a href="#" class="catalog-item-wrapper">
+      	    <div class="image-holder">
+      	      <img src="img/kvast.jpg" alt="catalog-picture" width="360px" height="616px">
+      	    </div>
+      	    <div class="catalog-item-modal">
+      	    	<div class="catalog-item-modal-header">
+      	    		Кваст
+      	    	</div>
+      	    	<div class="catalog-item-modal-body">
+      	    		Промо-сайт производителя крафтового кваса
+      	    	</div>
+      	    	<button> 9 900 руб.</button>
+      	    </div>
+      	  </a>
+      	
+      	  <a href="#" class="catalog-item-wrapper">
+      	    <div class="image-holder">
+      	      <img src="img/borodinski.jpg" alt="catalog-picture" width="360px" height="616px">
+      	    </div>
+      	    <div class="catalog-item-modal">
+      	    	<div class="catalog-item-modal-header">
+      	    		Barbershop
+      	    	</div>
+      	    	<div class="catalog-item-modal-body">
+      	    		Сайт салоны красоты. Для мужчин, да.
+      	    	</div>
+      	    	<button> 9 900 руб.</button>
+      	    </div>
+      	  </a>
+      	
+      	  <a href="#" class="catalog-item-wrapper">
+      	    <div class="image-holder">
+      	      <img src="img/mishka.jpg" alt="catalog-picture" width="360px" height="616px">
+      	    </div>
+      	    <div class="catalog-item-modal">
+      	    	<div class="catalog-item-modal-header">
+      	    		Mishka
+      	    	</div>
+      	    	<div class="catalog-item-modal-body">
+      	    		Интернет-магазин  вязаных игрушек
+      	    	</div>
+      	    	<button> 9 900 руб.</button>
+      	    </div>
+      	  </a>
+      	
+      	  <a href="#" class="catalog-item-wrapper">
+      	    <div class="image-holder">
+      	      <img src="img/pink.jpg" alt="catalog-picture" width="360px" height="616px">
+      	    </div>
+      	    <div class="catalog-item-modal">
+      	    	<div class="catalog-item-modal-header">
+      	    		Pink App
+      	    	</div>
+      	    	<div class="catalog-item-modal-body">
+      	    		Продуктовый лендинг приложения для iOS и Android
+      	    	</div>
+      	    	<button> 9 900 руб.</button>
+      	    </div>
+      	  </a>
+      	
+      	  <div class="bottom-navigation-block clearfix">
+      	    <ul class="clearfix">
+      	      <li>
+      	      	<span class="active">1</span>
+      	      </li>
+      	      <li>
+      	      	<a href="#">2</a>
+      	      </li>
+      	      <li>
+      	      	<a href="#">3</a>
+      	      </li>
+      	      <li class="bottom-navigation-next">
+      	      	<a href="#">Следущая</a>
+      	      </li>
+      	    </ul>
+      	  </div>
+      	</div>
+      	<!--Каталог товаров конец--></div>
 
-					<!--Секция yandex карты начало-->
-					<div class="our-location-section">
-						<div id="map" style="width: 600px; height: 400px"></div>
-						<div class="our-location-block">
-							<div class="our-location-header">
-								NЁRDS DESIGN STUDIO
-							</div>
-							<div class="our-location-description">
-								<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-								<p>тел. +7 (812) 275-75-75</p>
-							</div>
-							<button>Напишите нам</button>
+			<!--Секция yandex карты начало-->
+				<div class="our-location-section">
+					<div id="map" style="width: 100%; height: 416px"></div>
+					<div class="our-location-block">
+						<div class="our-location-header">
+							NЁRDS DESIGN STUDIO
 						</div>
+						<div class="our-location-description">
+							<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+							<p>тел. +7 (812) 275-75-75</p>
+						</div>
+						<button>Напишите нам</button>
 					</div>
-					<!--Секция yandex карты конец-->
 				</div>
-			</div>
+				<!--Секция yandex карты конец-->
 		</main>
 
-		<footer class="main-footer">
-			<ul class="social-links-block">
-				<li>
-					<a href="" class="vk"></a>
-				</li>
-				<li>
-					<a href="" class="fb"></a>
-				</li>
-				<li>
-					<a href="" class="inst"></a>
-				</li>
-			</ul>
-			<div class="discount-block-slogan">
-				<span>Давайте дружить, это выгодно!</span>
-				<p>Скидка 10% для друзей из социальных сетей.</p>
-			</div>
-		</footer>
+				<footer class="main-footer">
+					<div class="container clearfix">
+						<ul class="social-links-block clearfix">
+							<li class="clearfix">
+								<a href="#" class="vk"></a>
+							</li>
+							<li>
+								<a href="#" class="fb"></a>
+							</li>
+							<li>
+								<a href="#" class="inst"></a>
+							</li>
+						</ul>
+						<div class="discount-block-slogan">
+							<span>Давайте дружить, это выгодно!</span>
+							<p>Скидка 10% для друзей из социальных сетей.</p>
+						</div>
+					</div>
+				</footer>
 
-		<!--Модальное окно начало-->
-		<div class="modal-container">
-			<div class="modal-container-header">
-				<span>Напишите нам</span>
-				<button class="close-button-modal"></button>
-			</div>
-			<div class="modal-container-body">
-				<form action="" method="get">
-					<div class="form-name">	
-						<label>
-							<span>Ваше имя</span>
-							<input type="text" value="Представьтесь,пожалуйста">
-						</label>
+				<!--Модальное окно начало-->
+				<div class="modal-container clearfix">
+					<div class="modal-container-header">
+						<span>Напишите нам</span>
+						<button class="close-button-modal"></button>
 					</div>
-					<div class="form-email">	
-						<label>
-							<span>Ваш email</span>
-							<input type="text" value="Для отправки ответа">
-						</label>
+					<div class="modal-container-body clearfix">
+						<form id="modal-form" action="" method="get">
+							<div class="form-item">	
+								<label>
+									<div>Ваше имя</div>
+									<input type="text" value="Представьтесь,пожалуйста">
+								</label>
+							</div>
+							<div class="form-item email">	
+								<label>
+									<div>Ваш email</div>
+									<input type="text" value="Для отправки ответа">
+								</label>
+							</div>
+							<div class="form-item textarea">	
+								<label>
+									<div>Текст письма</div>
+									<textarea name="" id="" cols="30" rows="10">В свободной форме</textarea>
+								</label>
+							</div>
+							<input type="submit" class="form-button">
+						</form>
 					</div>
-					<div class="form-message">	
-						<label>
-							<span>Текст письма</span>
-							<textarea name="" id="" cols="30" rows="10">В свободной форме</textarea>
-						</label>
-					</div>
-					<input type="submit">
-				</form>
-			</div>
-		</div>
-		<!--Модальное окно конец-->
+				</div>
 	
   </body>
 </html>
