@@ -2,13 +2,13 @@ ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [59.938631, 30.323000],
             zoom: 17,
-            controls: []
+            controls: [],
+            scroll: false
         }, {
             searchControlProvider: 'yandex#search'
         }),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка',
+            hintContent: 'Nerds',
 
         }, {
             // Опции.
@@ -24,5 +24,5 @@ ymaps.ready(function () {
         });
 
     myMap.geoObjects.add(myPlacemark);
-    myMap.behaviors.disable('drag','zoom');
+    myMap.behaviors.disable('scrollZoom');
 });
