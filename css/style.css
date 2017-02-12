@@ -82,6 +82,7 @@ h3 {
 	width: 160px;
 	float: left;
 	padding-top: 50px;
+	cursor: pointer;
 }
 
 .logo:hover {
@@ -195,7 +196,11 @@ h3 {
 	position: relative;
 	height: 426px;
 	overflow: hidden;
-} 
+}
+
+.slider-section img {
+	width: 100%;
+}
 
 .slider-section .item{
 	position: absolute;
@@ -652,7 +657,7 @@ main .gray-wrapper {
 	font-style: normal;
 }
 
-.our-location-description + button {
+.modal-on-button {
 	width: 218px;
 	height: 50px;
 	background-color: #fb565a;
@@ -688,6 +693,16 @@ main .gray-wrapper {
 	-moz-box-shadow: -1px 15px 55px 3px rgba(0,0,0,0.75);
 	box-shadow: -1px 15px 55px 3px rgba(0,0,0,0.75);
 	display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+.modal-container-on {
+	display: block;
 }
 
 .modal-container-header {
@@ -719,13 +734,14 @@ main .gray-wrapper {
 	outline: none;
 }
 
-.form-item div {
+.form-item label {
 	font-size: 16px;
 	font-family: "roboto";
 	font-weight: bold;
 	font-style: normal;
 	color: #000000;
 	margin-bottom: 10px;
+	display: block;
 }
 
 .form-item:last-child {
@@ -740,6 +756,11 @@ main .gray-wrapper {
 	border-radius: 3px;
 	color: #d7dcde;
 	padding-left: 11px;
+	position: relative;
+}
+
+input.error {
+	border: 2px solid #e74246;
 }
 
 .modal-container-body input:hover {
@@ -748,8 +769,8 @@ main .gray-wrapper {
 
 .modal-container-body input:focus {
 	border-color: #000000;
+	color: #000000;
 } 
-
 
 .close-button-modal {
 	float: right;
@@ -763,6 +784,21 @@ main .gray-wrapper {
 	cursor: pointer;
 	opacity: 0.5;
 }
+
+
+::-webkit-input-placeholder { 
+  color: #d7dcde;
+}
+::-moz-placeholder { 
+  color: #d7dcde;
+}
+:-ms-input-placeholder { 
+  color: #d7dcde;
+}
+:-moz-placeholder { 
+  color: #d7dcde;
+}
+
 
 .close-button-modal:hover {
 	opacity: 1;
@@ -798,6 +834,7 @@ main .gray-wrapper {
 
 .form-item.textarea textarea:focus {
 	border-color: #000000;
+	color: #000000;
 }
 
 .form-item.email {
@@ -970,7 +1007,6 @@ button:focus {
 
 .catalog-item-wrapper:hover .image-holder-top {
 	background-color: #4d4d4d;
-	transition: 0.5s;
 }
 
 .catalog-item-wrapper:hover .catalog-item-modal {
@@ -1144,7 +1180,7 @@ button:focus {
 	margin-bottom: 30px;
 }
 
-.catalog-item-modal button {
+.catalog-item-modal-button {
 	width: 200px;
 	height: 50px;
 	background-color: #fb565a;
@@ -1157,14 +1193,17 @@ button:focus {
 	border-radius: 2px;
 	cursor: pointer;
 	margin-bottom: 43px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 50px;
 }
 
-.catalog-item-modal button:hover {
+.catalog-item-modal-button:hover {
 	background-color: #e74246;
 	transition: 0.5s ease;
 }
 
-.catalog-item-modal button:active {
+.catalog-item-modal-button:active {
 	background-color: #d7373b;
 	transition: 0.5s ease;
 }

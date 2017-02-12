@@ -6,8 +6,6 @@
 		<title>HTML Academy: Нёрдс</title>
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
-		<script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript"></script>
-		<script src="js/scripts.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -15,9 +13,9 @@
 			<div class="gray-wrapper">
 				<div class="container clearfix">
 					<div class="logo">
-						<a href="index.html">
+						
 							<img src="img/logo.png" alt="logo-picture" width="161" height="65">
-						</a> 
+						
 					</div>
 						<nav class="main-navigation">
 							<ul>
@@ -50,7 +48,7 @@
 					<div class="slider-section">
 						<input type="radio" name="slider-check" class="slider-check" id="slider-check-1" checked>
 						<label for="slider-check-1" class="slider-label first"></label>
-						<img src="img/slide-1.jpg" alt="slider-image" width="100%" height="416" class="slider-image">
+						<img src="img/slide-1.jpg" alt="slider-image-1" height="416" class="slider-image">
 						<div class="slider-description-container">
 							<h1>Долго, дорого, скрупулезно.</h1>
 							<div class="slider-description">
@@ -61,7 +59,7 @@
 			
 						<input type="radio" name="slider-check" class="slider-check" id="slider-check-2">
 						<label for="slider-check-2" class="slider-label second"></label>
-						<img src="img/slide-2.jpg" alt="slider-image" width="100%" height="416" class="slider-image">
+						<img src="img/slide-2.jpg" alt="slider-image-2" height="416" class="slider-image">
 						<div class="slider-description-container">
 							<h1>Любим математику как никто другой</h1>
 							<div class="slider-description">
@@ -72,7 +70,7 @@
 				
 						<input type="radio" name="slider-check" class="slider-check" id="slider-check-3">
 						<label for="slider-check-3" class="slider-label third"></label>
-						<img src="img/slide-3.jpg" alt="slider-image" width="100%" height="416" class="slider-image">
+						<img src="img/slide-3.jpg" alt="slider-image-3" height="416" class="slider-image">
 						<div class="slider-description-container">
 							<h1>Только ночь,только хардкор</h1>
 							<div class="slider-description">
@@ -183,7 +181,7 @@
 					<a href="#" class="our-projects-block first">
 						<img src="img/html-logo.png" alt="HTML academy" width="199" height="68">
 					</a>
-					<a href=#"" class="our-projects-block second">
+					<a href="#" class="our-projects-block second">
 						<img src="img/borodinsky-logo.png" alt="Borodinsky" width="209" height="90">
 					</a>
 					<a href="#" class="our-projects-block third">
@@ -208,7 +206,7 @@
 						<p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 						<p>тел. +7 (812) 275-75-75</p>
 					</div>
-					<button>Напишите нам</button>
+					<button class="modal-on-button">Напишите нам</button>
 				</div>
 			</div>
 			<!--Секция yandex карты конец-->
@@ -242,30 +240,25 @@
 				<div class="close-button-modal"></div>
 			</div>
 			<div class="modal-container-body clearfix">
-				<form id="modal-form" action="" method="get">
+				<form id="modal-form" method="get">
 					<div class="form-item">	
-						<label>
-							<div>Ваше имя</div>
-							<input type="text" value="Представьтесь,пожалуйста">
-						</label>
+						<label for="form-item-name">Ваше имя</label>
+						<input type="text" placeholder ="Представьтесь,пожалуйста" name="name" id="form-item-name">
 					</div>
 					<div class="form-item email">	
-						<label>
-							<div>Ваш email</div>
-							<input type="text" value="Для отправки ответа">
-						</label>
+						<label for="form-item-email">Ваш email</label>
+						<input type="text" placeholder ="Для отправки ответа" name="email" id="form-item-email">
 					</div>
 					<div class="form-item textarea">	
-						<label>
-							<div>Текст письма</div>
-							<textarea name="" id="" cols="30" rows="6">В свободной форме</textarea>
-						</label>
+						<label for="form-item-text">Текст письма</label>
+						<textarea name="text" cols="30" rows="6" placeholder="В свободной форме" id="form-item-text"></textarea>
 					</div>
 					<input type="submit" class="form-button">
 				</form>
 			</div>
 		</div>
 		<!--Модальное окно конец-->
-
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" defer></script>
+		<script src="js/scripts.js" type="text/javascript" defer></script>
 	</body>
 </html>
