@@ -1,5 +1,5 @@
 body {
-	font-family: roboto;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-size: 14px;
 	line-height: normal;
 	color: #000000;
@@ -49,14 +49,14 @@ body {
 h1 {
 	font-size: 55px;
 	color: #000000;
-	font-family: roboto;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: 600;
 }
 
 h2 {
 	font-size: 45px;
 	color: #000000;
-	font-family: roboto;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: 600;
 }
 
@@ -65,7 +65,7 @@ h3 {
 	color: #000000;
 	font-family: roboto;
 	font-weight: bold;
-	text-transform: uppercase;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	padding-bottom: 37px;
 }
 /*HEADERS END HERE*/
@@ -100,6 +100,7 @@ h3 {
 }
 
 .main-navigation {
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	float: left;
 	width: 600px;
 	text-transform: uppercase;
@@ -225,7 +226,7 @@ h3 {
 		background-color: #fb565a;
 		text-transform: uppercase;
 		color: #ffffff;
-		font-family: roboto;
+		font-family: "PT Sans Narrow", "Arial", 'roboto';
 		font-weight: normal;
 		font-style: normal;
 		border: none;
@@ -252,7 +253,7 @@ h3 {
 
 .slider-description {
 	color: #283136;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -329,6 +330,7 @@ h3 {
 
  .slider-description-container h1 {
 	color: #000000;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: 600;
 	font-style: normal;
 	font-size: 55px;
@@ -352,7 +354,7 @@ h3 {
 .order-section-header {
 	font-size: 24px;
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: bold;
 	font-style: normal;
 	text-transform: uppercase;
@@ -364,7 +366,7 @@ h3 {
 	height: 50px;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	border: none;
@@ -380,7 +382,7 @@ h3 {
 
 .order-section-description {
 	font-size: 16px;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	color:#283136;
@@ -466,7 +468,7 @@ h3 {
 
 .about-us-description-block {
 	float: left;
-	width: 660px;
+	width: 685px;
 }
 
 .about-us-description-block h2{
@@ -586,14 +588,14 @@ h3 {
 	float: left;
 	width: 100px;
 	margin-right: 20px;
-	font-family: roboto;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 }
 
 .metrics-block-rates-block div {
 	font-size: 45px;
 	font-weight: bold;
 	font-style: normal;
-	font-family: roboto;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	margin-bottom: 11px;
 }
 
@@ -602,7 +604,7 @@ h3 {
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
-	font-family: roboto;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	text-align: left; 
 }
 
@@ -643,7 +645,7 @@ main .gray-wrapper {
 .our-location-header {
 	font-size: 18px;
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: bold;
 	font-style: normal;
 	text-transform: uppercase;
@@ -652,7 +654,7 @@ main .gray-wrapper {
 .our-location-description {
 	font-size: 16px;
 	color: #666666;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 }
@@ -663,7 +665,7 @@ main .gray-wrapper {
 	background-color: #fb565a;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	border: none;
@@ -707,7 +709,7 @@ main .gray-wrapper {
 
 .modal-container-header {
 	font-size: 45px;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	color: #000000;
@@ -716,7 +718,7 @@ main .gray-wrapper {
 
 .form-name div {
 	font-size: 16px;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: bold;
 	font-style: normal;
 	color: #000000;
@@ -736,7 +738,7 @@ main .gray-wrapper {
 
 .form-item label {
 	font-size: 16px;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: bold;
 	font-style: normal;
 	color: #000000;
@@ -799,6 +801,28 @@ input.error {
   color: #d7dcde;
 }
 
+:focus::-webkit-input-placeholder {
+color: #000000;
+}
+:focus:-moz-placeholder {
+color: #000000;
+}
+:focus:-ms-input-placeholder {
+color: #000000;
+}
+
+.error::-webkit-input-placeholder { 
+  color: red;
+}
+.error::-moz-placeholder { 
+  color: red;
+}
+.error:-ms-input-placeholder { 
+  color: red;
+}
+.error:-moz-placeholder { 
+  color: red;
+}
 
 .close-button-modal:hover {
 	opacity: 1;
@@ -847,7 +871,7 @@ input.error {
 	background-color: #fb565a;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	border: none;
@@ -948,7 +972,7 @@ button:focus {
 
 .discount-block-slogan span {
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: bold;
 	font-style: normal;
 	font-size: 36px;
@@ -958,7 +982,7 @@ button:focus {
 
 .discount-block-slogan p {
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -980,8 +1004,9 @@ button:focus {
 	margin: 0px;
 	font-size: 55px;
 	color: #000000;
-	font-family: roboto;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: 600;
+	font-style: normal;
 }
 
 
@@ -1022,7 +1047,7 @@ button:focus {
 	border: none;
 	text-decoration: none;
 	color: #b2b2b2;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	font-size: 14px;
@@ -1145,8 +1170,7 @@ button:focus {
 
 .main-products-filter {
 	margin-top: 21px;
-	float: left;
-	margin-left: 267px;
+	float: right;
 }
 
 .catalog-item-modal {
@@ -1161,7 +1185,7 @@ button:focus {
 
 .catalog-item-modal-header {
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: bold;
 	font-style: normal;
 	font-size: 18px;
@@ -1171,7 +1195,7 @@ button:focus {
 
 .catalog-item-modal-body {
 	color: #666666;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -1186,7 +1210,7 @@ button:focus {
 	background-color: #fb565a;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	border: none;
@@ -1253,7 +1277,7 @@ button:focus {
 }
 
 .product-types-row span {
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -1357,7 +1381,7 @@ input[type="checkbox"]:checked:hover {
 	border: none;
 	text-decoration: none;
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: 600;
 	font-size: 16px;
 	font-style: normal;
@@ -1386,7 +1410,7 @@ input[type="checkbox"]:checked:hover {
 .bottom-pagination-block li a {
 	text-decoration: none;
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: 600;
 	font-size: 16px; 
 	font-style: normal;
@@ -1400,7 +1424,7 @@ input[type="checkbox"]:checked:hover {
 .bottom-pagination-block li.active {
 	text-decoration: none;
 	color: #000000;
-	font-family: "roboto";
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-weight: 600;
 	font-size: 16px; 
 	font-style: normal;
@@ -1483,7 +1507,7 @@ input[type="checkbox"]:checked:hover {
 }
 
 .price-controls input {
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: "PT Sans Narrow", "Arial", 'roboto';
 	font-size: 16px;
 	width: 60px;
 	margin-left: 10px;
