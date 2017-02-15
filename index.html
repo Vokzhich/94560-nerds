@@ -43,40 +43,42 @@
 				<div class="container">
 
 					<!--Слайдер начало-->
-					<div class="slider-section">
-						<input type="radio" name="slider-check" class="slider-check" id="slider-check-1" checked>
-						<label for="slider-check-1" class="slider-label first"></label>
-						<img src="img/slide-1.jpg" alt="slider-image-1" height="416" class="slider-image">
-						<div class="slider-description-container">
-							<h1>Долго, дорого, скрупулезно.</h1>
-							<div class="slider-description">
-								<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-							</div>
-							<a href="#" class="learn-more-button">Узнать больше</a>
-						</div>
-			
-						<input type="radio" name="slider-check" class="slider-check" id="slider-check-2">
-						<label for="slider-check-2" class="slider-label second"></label>
-						<img src="img/slide-2.jpg" alt="slider-image-2" height="416" class="slider-image">
-						<div class="slider-description-container">
-							<h1>Любим математику как никто другой</h1>
-							<div class="slider-description">
-								<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-							</div>
-							<a href="#" class="learn-more-button">Узнать больше</a>
-						</div>
-				
-						<input type="radio" name="slider-check" class="slider-check" id="slider-check-3">
-						<label for="slider-check-3" class="slider-label third"></label>
-						<img src="img/slide-3.jpg" alt="slider-image-3" height="416" class="slider-image">
-						<div class="slider-description-container">
-							<h1>Только ночь,только хардкор</h1>
-							<div class="slider-description">
-								<p>Работать днем, как все? Мы против этого.Ближе к полуночи работа только начинается.</p>
-							</div>
-							<a href="#" class="learn-more-button">Узнать больше</a>
-						</div>
-					</div>
+					<div class="slider">
+		        <input type="radio" id="btn-1" name="toggle" checked>
+		        <input type="radio" id="btn-2" name="toggle">
+		        <input type="radio" id="btn-3" name="toggle">
+		        <div class="slider-controls">
+		          <label for="btn-1"></label>
+		          <label for="btn-2"></label>
+		          <label for="btn-3"></label>
+		        </div>
+		        <div class="slides">
+		          <div class="slide">
+		            <div class="slide-text">
+		              <h1>Долго, дорого, скрупулезно.</h1>
+		              <p>Математически выверенный дизайн<br>
+		  							для вашего сайта или мобильного приложения.</p>
+		              <a class="btn" href="#">Узнать больше</a>
+		            </div>
+		          </div>
+		          <div class="slide">
+		            <div class="slide-text">
+		              <h1>Любим математику<br> как никто другой</h1>
+		              <p>Никакого креатива, только математические формулы<br> 
+										для расчета идеальных пропорций.</p>
+		              <a class="btn" href="#">Узнать больше</a>
+		            </div>
+		          </div>
+		          <div class="slide">
+		            <div class="slide-text">
+		              <h1>Только ночь, только хардкор</h1>
+		              <p>Работать днем, как все? Мы против этого.<br>
+										Ближе к полуночи работа только начинается.</p>
+		              <a class="btn" href="#">Узнать больше</a>
+		            </div>
+		          </div>
+		        </div>
+      		</div>
 				</div>
 				<!--Слайдер конец-->
 				
@@ -232,27 +234,30 @@
 		</footer>
 
 		<!--Модальное окно начало-->
-		<div class="modal-container clearfix">
-			<div class="modal-container-header">
-				<span>Напишите нам</span>
-				<div class="close-button-modal"></div>
-			</div>
-			<div class="modal-container-body clearfix">
-				<form id="modal-form" method="get">
-					<div class="form-item">	
-						<label for="form-item-name">Ваше имя</label>
-						<input type="text" placeholder ="Представьтесь,пожалуйста" name="name" id="form-item-name">
-					</div>
-					<div class="form-item email">	
-						<label for="form-item-email">Ваш email</label>
-						<input type="text" placeholder ="Для отправки ответа" name="email" id="form-item-email">
-					</div>
-					<div class="form-item textarea">	
-						<label for="form-item-text">Текст письма</label>
-						<textarea name="text" cols="30" rows="6" placeholder="В свободной форме" id="form-item-text"></textarea>
-					</div>
-					<input type="submit" class="form-button">
-				</form>
+
+		<div class="modal-container-holder">
+			<div class="modal-container clearfix">
+				<div class="modal-container-header">
+					<span>Напишите нам</span>
+					<div class="close-button-modal"></div>
+				</div>
+				<div class="modal-container-body clearfix">
+					<form id="modal-form" method="get">
+						<div class="form-item">	
+							<label for="form-item-name">Ваше имя</label>
+							<input type="text" placeholder ="Представьтесь,пожалуйста" name="name" id="form-item-name">
+						</div>
+						<div class="form-item email">	
+							<label for="form-item-email">Ваш email</label>
+							<input type="text" placeholder ="Для отправки ответа" name="email" id="form-item-email">
+						</div>
+						<div class="form-item textarea">	
+							<label for="form-item-text">Текст письма</label>
+							<textarea name="text" placeholder="В свободной форме" id="form-item-text"></textarea>
+						</div>
+						<input type="submit" class="form-button">
+					</form>
+				</div>
 			</div>
 		</div>
 		<!--Модальное окно конец-->

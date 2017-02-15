@@ -322,27 +322,29 @@
 		</footer>
 
 		<!--Модальное окно начало-->
-		<div class="modal-container clearfix">
-			<div class="modal-container-header">
-				<span>Напишите нам</span>
-				<div class="close-button-modal"></div>
-			</div>
-			<div class="modal-container-body clearfix">
-				<form id="modal-form" method="get">
-					<div class="form-item">	
-						<label for="form-item-name">Ваше имя</label>
-						<input type="text" placeholder ="Представьтесь,пожалуйста" name="name" id="form-item-name">
-					</div>
-					<div class="form-item email">	
-						<label for="form-item-email">Ваш email</label>
-						<input type="text" placeholder ="Для отправки ответа" name="email" id="form-item-email">
-					</div>
-					<div class="form-item textarea">	
-						<label for="form-item-text">Текст письма</label>
-						<textarea name="text" cols="30" rows="6" placeholder="В свободной форме" id="form-item-text"></textarea>
-					</div>
-					<input type="submit" class="form-button">
-				</form>
+		<div class="modal-container-holder">
+			<div class="modal-container clearfix">
+				<div class="modal-container-header">
+					<span>Напишите нам</span>
+					<div class="close-button-modal"></div>
+				</div>
+				<div class="modal-container-body clearfix">
+					<form id="modal-form" method="get">
+						<div class="form-item">	
+							<label for="form-item-name">Ваше имя</label>
+							<input type="text" placeholder ="Представьтесь,пожалуйста" name="name" id="form-item-name">
+						</div>
+						<div class="form-item email">	
+							<label for="form-item-email">Ваш email</label>
+							<input type="text" placeholder ="Для отправки ответа" name="email" id="form-item-email">
+						</div>
+						<div class="form-item textarea">	
+							<label for="form-item-text">Текст письма</label>
+							<textarea name="text" placeholder="В свободной форме" id="form-item-text"></textarea>
+						</div>
+						<input type="submit" class="form-button">
+					</form>
+				</div>
 			</div>
 		</div>
 		<!--Модальное окно конец-->

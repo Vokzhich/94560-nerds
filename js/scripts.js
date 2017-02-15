@@ -1,26 +1,26 @@
 
-/*Variables*/
+/*Global variables*/
 var link = document.querySelector(".modal-on-button");
-var popup = document.querySelector(".modal-container");
+var popup = document.querySelector(".modal-container-holder");
 var closeButton = popup.querySelector(".close-button-modal");
 var modalName = popup.querySelector("[name=name]");
 var modalEmail = popup.querySelector("[name=email]");
 var modalText = popup.querySelector("[name=text]");
 var formModal = popup.querySelector("#modal-form");
 var formElements = formModal.querySelector("[type=text]");
-/*Variables*/
+/*Global variables*/
 
 /*Yandex maps*/
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [59.938631, 30.323000],
+            center: [59.939000, 30.319222],
             zoom: 17,
             controls: [],
             scroll: false
         }, {
             searchControlProvider: 'yandex#search'
         }),
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+        myPlacemark = new ymaps.Placemark([59.938631, 30.321239], {
             hintContent: 'Nerds',
 
         }, {
@@ -34,6 +34,7 @@ ymaps.ready(function () {
     myMap.behaviors.disable('scrollZoom');
 });
 /*Yandex maps*/
+
 
 /*Modal window opener*/
 link.addEventListener("click",function(event) {

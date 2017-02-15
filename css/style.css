@@ -1,5 +1,5 @@
 body {
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-size: 14px;
 	line-height: normal;
 	color: #000000;
@@ -49,23 +49,22 @@ body {
 h1 {
 	font-size: 55px;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: 600;
 }
 
 h2 {
 	font-size: 45px;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: 600;
 }
 
 h3 {
 	font-size: 18px;
 	color: #000000;
-	font-family: roboto;
 	font-weight: bold;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	padding-bottom: 37px;
 }
 /*HEADERS END HERE*/
@@ -100,7 +99,7 @@ h3 {
 }
 
 .main-navigation {
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	float: left;
 	width: 600px;
 	text-transform: uppercase;
@@ -193,151 +192,160 @@ h3 {
 /*HEADER STYLES END HERE*/
 
 /*SLIDER STARTS HERE*/
-.slider-section {
-	position: relative;
-	height: 426px;
-	overflow: hidden;
+.slider{
+    position: relative;
+    width: 1160px;
+    height: 426px;
+    margin: 0 auto;
 }
-
-.slider-section img {
-	width: 100%;
+.slider input[type=radio] {
+    position:absolute;
+    opacity:0;
 }
-
-.slider-section .item{
-	position: absolute;
-	top: 0;
-	left: 0;
+.slider-controls{
+    position:absolute;
+    bottom:102px;
+    left: 583px;
+    width:200px;
+    height:10px;
+    margin-left: -96px;
+    text-align:center;
+    z-index:1000;
 }
-
-.slider-label {
-		overflow:hidden;
-		display:inline-block;
-		width:20px;
-		height:20px;
-		background:#ffffff;
-		border-radius:50%;
-		cursor: pointer;
-		position: absolute;
+.slider-controls label{
+    display:inline-block;
+    width:14px;
+    height:14px;
+    margin-right: 13px;
+    background:white;
+    border:3px solid white;
+    vertical-align:top;
+    border-radius:50%;
+    cursor:pointer;
+    position: relative;
 }
-
-.learn-more-button {
-		width: 240px;
-		height: 50px;
-		background-color: #fb565a;
-		text-transform: uppercase;
-		color: #ffffff;
-		font-family: "PT Sans Narrow", "Arial", 'roboto';
-		font-weight: normal;
+#btn-1:checked ~ .slider-controls label[for="btn-1"]:before {
+		content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid #c2c2c2;
+}
+#btn-2:checked ~ .slider-controls label[for="btn-2"]:before {
+		content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid #c2c2c2;
+}
+#btn-3:checked ~ .slider-controls label[for="btn-3"]:before {
+		content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    border: 2px solid #c2c2c2;
+}
+.slide {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.slide-text {
+    width:530px;
+    padding:30px 0;
+    color:#283136;
+}
+.slide-title {
+    font-size:36px;
+    line-height:1;
+    font-weight:bold;
+    color:black;
+}
+.slide .btn {
+    display:block;
+    width:240px;
+    height: 50px;
+    background-color: #fb565a;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'roboto','Arial',sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 16px;
+}
+.slide .btn:hover {
+    background-color: #e74246;
+    transition: 0.5s ease;
+}
+.slide .btn:active {
+    background-color: #d7373b;
+    border: none;
+    color: #e06366;
+}
+.slide h1 {
+		font-size: 55px;
+		font-family: 'roboto','Arial',sans-serif;
 		font-style: normal;
-		border: none;
-		border-radius: 2px;
-		cursor: pointer;
-		outline: none;
-		display: block;
-		text-decoration: none;
-		text-align: center;
-		line-height: 50px;
+		font-weight: 600;
+		line-height: 62px;
+		color: #000000;
+		margin-bottom: 23px;
+}
+.slide-text p {
 		font-size: 16px;
+		font-family: 'roboto','Arial',sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		line-height: auto;
+		color: #283136;
+		margin-bottom: 46px;
 }
-
-.learn-more-button:hover {
-	background-color: #e74246;
-	transition: 0.5s ease;
-} 
-
-.learn-more-button:active {
-	background-color: #d7373b;
-	outline: none;
-	color: #e06366;
+.slide:nth-child(1){
+    background-image:url('../img/slider-bg.png');
+    background-repeat:no-repeat;
+    background-position:93% 15px;
 }
-
-.slider-description {
-	color: #283136;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 16px;
-	line-height: 23px;
-	margin-bottom: 40px;
+.slide:nth-child(2){
+    background-image:url('../img/slider-bg-2.png');
+    background-repeat:no-repeat;
+    background-position:93% 15px;
 }
-
-.slider-check {
-		position:absolute;
-		clip:rect(0 0 0 0);
-		display: none;
-		}
-
-.slider-label.first {
-	top: 313px;
-	left: 535px;
+.slide:nth-child(3){
+    background-image:url('../img/slider-bg-3.png');
+    background-repeat:no-repeat;
+    background-position:93% 15px;
 }
-
-.slider-label.second {
-	top: 313px;
-	left: 570px;
+.slide{
+    display:none;
 }
-
-
-.slider-label.third {
-	top: 313px;
-	left: 606px;
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
+    display: block;
 }
-
-
-.slider-check:checked  + .slider-label + .slider-image {
-	display:block;
-	}
-
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
+    display: block;
 }
-.slider-check:checked  + .slider-label:before {
-	content: "\2022";
-	color: #f3f3f3;
-	font-size: 30px;
-	text-align: center;
-	line-height: 18px;
+#btn-3:checked ~ .slides .slide:nth-child(3) { 
+    display: block;
 }
-
-
-	.slider-check:checked  + .slider-label + .slider-image + .slider-description-container {
-	display:block;
-	}
-
-.slider-check:checked .slider-label {
-	background:#C00;
-	}
-
- .slider-image {
-	display: none;
- } 
-
- .slider-navigation {
-	z-index: 99999;
-	position: relative;
- }
-
- .slider-description-container {
-	width: 533px;
-	display: none;
-	position: absolute;
-	z-index: 99;
-	top: 0;
-	left: 0;
- }
-
- .slider-description-container p {
-	width: 380px;
- }
-
- .slider-description-container h1 {
-	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
-	font-weight: 600;
-	font-style: normal;
-	font-size: 55px;
-	margin-top: 71px;
-	line-height: 56px;
-	margin-bottom: 28px;
- }
 /*SLIDER ENDS HERE*/
 
 
@@ -354,7 +362,7 @@ h3 {
 .order-section-header {
 	font-size: 24px;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	text-transform: uppercase;
@@ -366,11 +374,11 @@ h3 {
 	height: 50px;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	border: none;
-	border-radius: 2px;
+	border-radius: 3px;
 	cursor: pointer;
 	outline: none;
 	display: block;
@@ -382,7 +390,7 @@ h3 {
 
 .order-section-description {
 	font-size: 16px;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	color:#283136;
@@ -588,14 +596,14 @@ h3 {
 	float: left;
 	width: 100px;
 	margin-right: 20px;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 }
 
 .metrics-block-rates-block div {
 	font-size: 45px;
 	font-weight: bold;
 	font-style: normal;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	margin-bottom: 11px;
 }
 
@@ -604,7 +612,7 @@ h3 {
 	font-size: 16px;
 	font-weight: normal;
 	font-style: normal;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	text-align: left; 
 }
 
@@ -645,18 +653,20 @@ main .gray-wrapper {
 .our-location-header {
 	font-size: 18px;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	text-transform: uppercase;
+	margin-bottom: 28px;
 }
 
 .our-location-description {
 	font-size: 16px;
 	color: #666666;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
+	margin-bottom: 36px;
 }
 
 .modal-on-button {
@@ -665,13 +675,14 @@ main .gray-wrapper {
 	background-color: #fb565a;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	border: none;
-	border-radius: 2px;
+	border-radius: 3px;
 	cursor: pointer;
-	outline: none; 
+	outline: none;
+	font-size: 16px; 
 }
 
 .our-location-description + button:hover {
@@ -694,6 +705,9 @@ main .gray-wrapper {
 	-webkit-box-shadow: -1px 15px 55px 3px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 15px 55px 3px rgba(0,0,0,0.75);
 	box-shadow: -1px 15px 55px 3px rgba(0,0,0,0.75);
+}
+
+.modal-container-holder {
 	display: none;
   position: fixed;
   top: 0;
@@ -701,6 +715,8 @@ main .gray-wrapper {
   left: 0;
   right: 0;
   z-index: 999999;
+	padding-top: 10px;
+  margin: 0 auto;
 }
 
 .modal-container-on {
@@ -709,7 +725,7 @@ main .gray-wrapper {
 
 .modal-container-header {
 	font-size: 45px;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	color: #000000;
@@ -718,7 +734,7 @@ main .gray-wrapper {
 
 .form-name div {
 	font-size: 16px;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	color: #000000;
@@ -738,7 +754,7 @@ main .gray-wrapper {
 
 .form-item label {
 	font-size: 16px;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	color: #000000;
@@ -759,6 +775,10 @@ main .gray-wrapper {
 	color: #d7dcde;
 	padding-left: 11px;
 	position: relative;
+	font-size: 16px;
+	font-family: 'roboto','Arial',sans-serif;
+	font-weight: normal;
+	font-style: normal;
 }
 
 input.error {
@@ -785,6 +805,8 @@ input.error {
 	border: none;
 	cursor: pointer;
 	opacity: 0.5;
+	margin-right: -10px;
+	margin-top: 15px;
 }
 
 
@@ -837,7 +859,7 @@ color: #000000;
 .form-item.textarea {
 	clear: both;
 	float: none;
-	margin-bottom: 50px;
+	margin-bottom: 42px;
 	margin-right: 0px;
 }
 
@@ -850,6 +872,11 @@ color: #000000;
 	resize: none;
 	padding-left: 14px;
 	padding-top: 10px;
+	font-size: 16px;
+	font-family: 'roboto','Arial',sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	min-height: 103px;
 }
 
 .form-item.textarea textarea:hover {
@@ -871,11 +898,11 @@ color: #000000;
 	background-color: #fb565a;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	border: none;
-	border-radius: 2px;
+	border-radius: 3px;
 	cursor: pointer;
 	outline: none;
 }
@@ -972,7 +999,7 @@ button:focus {
 
 .discount-block-slogan span {
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 36px;
@@ -982,7 +1009,7 @@ button:focus {
 
 .discount-block-slogan p {
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -1004,7 +1031,7 @@ button:focus {
 	margin: 0px;
 	font-size: 55px;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: 600;
 	font-style: normal;
 }
@@ -1047,7 +1074,7 @@ button:focus {
 	border: none;
 	text-decoration: none;
 	color: #b2b2b2;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 14px;
@@ -1185,7 +1212,7 @@ button:focus {
 
 .catalog-item-modal-header {
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: bold;
 	font-style: normal;
 	font-size: 18px;
@@ -1195,7 +1222,7 @@ button:focus {
 
 .catalog-item-modal-body {
 	color: #666666;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -1210,11 +1237,11 @@ button:focus {
 	background-color: #fb565a;
 	text-transform: uppercase;
 	color: #ffffff;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	border: none;
-	border-radius: 2px;
+	border-radius: 3px;
 	cursor: pointer;
 	margin-bottom: 43px;
   margin-left: auto;
@@ -1277,7 +1304,7 @@ button:focus {
 }
 
 .product-types-row span {
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 16px;
@@ -1381,7 +1408,7 @@ input[type="checkbox"]:checked:hover {
 	border: none;
 	text-decoration: none;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: 600;
 	font-size: 16px;
 	font-style: normal;
@@ -1410,7 +1437,7 @@ input[type="checkbox"]:checked:hover {
 .bottom-pagination-block li a {
 	text-decoration: none;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: 600;
 	font-size: 16px; 
 	font-style: normal;
@@ -1424,7 +1451,7 @@ input[type="checkbox"]:checked:hover {
 .bottom-pagination-block li.active {
 	text-decoration: none;
 	color: #000000;
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-weight: 600;
 	font-size: 16px; 
 	font-style: normal;
@@ -1507,7 +1534,7 @@ input[type="checkbox"]:checked:hover {
 }
 
 .price-controls input {
-	font-family: "PT Sans Narrow", "Arial", 'roboto';
+	font-family: 'roboto','Arial',sans-serif;
 	font-size: 16px;
 	width: 60px;
 	margin-left: 10px;
