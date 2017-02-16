@@ -4,8 +4,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Нёрдс-Каталог</title>
-		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/minified.css">
 	</head>
 
 	<body>
@@ -13,7 +13,7 @@
 		<header>
 			<div class="gray-wrapper">
 				<div class="container clearfix">
-					<div class="logo">
+					<div class="logo logo-animation">
 						<a href="index.html">
 							<img src="img/logo.png" alt="logo-picture" width="161" height="65">
 						</a> 
@@ -47,8 +47,8 @@
 					<div class="gray-top-section">
 						<h1>Магазин готовых шаблонов</h1>
 					</div>
-				</div>	
-			</div>	
+				</div>  
+			</div>  
 			<div class="container clearfix">
 				<!-- Боковое меню фильтрации начало -->
 				<div class="filter-section">
@@ -71,7 +71,7 @@
 						<div class="product-types">
 							<h3>Сетка:</h3>
 							<div class="product-types-row">
-								<input id="adapt" type="radio" name="product-type" value="1">
+								<input id="adapt" type="radio" name="product-type" value="1" checked>
 								<label class="product-types-label" for ="adapt">
 									<span>Адаптивная</span>
 								</label>
@@ -88,16 +88,16 @@
 									<span>Резиновая</span>
 								</label>
 							</div>
-						</div>	
+						</div>  
 
 						<div class="product-features">
 							<h3>Особенности:</h3>
 								<div class="product-types-row">
-									<input id="slider" type="checkbox">
+									<input id="slider" type="checkbox" checked>
 									<label for="slider" class="product-features-label">
 										<span>Слайдер</span>
 									</label>
-								</div>	
+								</div>  
 								<div class="product-types-row">
 									<input id="advantage" type="checkbox">
 									<label for="advantage" class="product-features-label">
@@ -105,7 +105,7 @@
 									</label>
 								</div>
 								<div class="product-types-row">
-									<input id="news" type="checkbox">
+									<input id="news" type="checkbox" checked>
 									<label for="news" class="product-features-label">
 										<span>Новости</span>
 									</label>
@@ -125,7 +125,7 @@
 						</div>
 
 						<input type="submit" value="Показать">
-					</form>	
+					</form> 
 				</div>
 				<!-- Боковое меню фильтрации конец -->
 				
@@ -282,7 +282,7 @@
 					</div>
 				</div>
 				<!--Каталог товаров конец-->
-			</div>	
+			</div>  
 
 			<!--Секция yandex карты начало-->
 				<div class="our-location-section">
@@ -330,15 +330,15 @@
 				</div>
 				<div class="modal-container-body clearfix">
 					<form id="modal-form" method="get">
-						<div class="form-item">	
+						<div class="form-item"> 
 							<label for="form-item-name">Ваше имя</label>
 							<input type="text" placeholder ="Представьтесь,пожалуйста" name="name" id="form-item-name">
 						</div>
-						<div class="form-item email">	
+						<div class="form-item email"> 
 							<label for="form-item-email">Ваш email</label>
 							<input type="text" placeholder ="Для отправки ответа" name="email" id="form-item-email">
 						</div>
-						<div class="form-item textarea">	
+						<div class="form-item textarea">  
 							<label for="form-item-text">Текст письма</label>
 							<textarea name="text" placeholder="В свободной форме" id="form-item-text"></textarea>
 						</div>
@@ -349,6 +349,6 @@
 		</div>
 		<!--Модальное окно конец-->
 		<script src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript" defer></script>
-		<script src="js/scripts.js" type="text/javascript" defer></script>
+		<script src="js/minified.js" type="text/javascript" defer></script>
 	</body>
 </html>
