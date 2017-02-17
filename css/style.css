@@ -19,7 +19,7 @@
 @font-face { 
 	font-family: 'roboto';
 	src: url('../fonts/robotomedium.woff') format('woff');
-	font-weight: 600;
+	font-weight: 500;
 	font-style: normal;
 		 
 }
@@ -50,14 +50,16 @@ h1 {
 	font-size: 55px;
 	color: #000000;
 	font-family: 'roboto','Arial',sans-serif;
-	font-weight: 600;
+	font-weight: 500;
+	font-style: normal;
 }
 
 h2 {
 	font-size: 45px;
 	color: #000000;
 	font-family: 'roboto','Arial',sans-serif;
-	font-weight: 600;
+	font-weight: 500;
+	font-style: normal;
 }
 
 h3 {
@@ -65,7 +67,8 @@ h3 {
 	color: #000000;
 	font-weight: bold;
 	font-family: 'roboto','Arial',sans-serif;
-	padding-bottom: 37px;
+	padding-bottom: 41px;
+	text-transform: uppercase;
 }
 /*HEADERS END HERE*/
 
@@ -102,7 +105,7 @@ h3 {
 	float: left;
 	width: 600px;
 	text-transform: uppercase;
-	font-weight: 600;
+	font-weight: 500;
 	font-style: normal;
 	font-size: 0px;
 	padding-left: 162px;
@@ -149,7 +152,6 @@ h3 {
 	width: 117px;
 	text-align: right;
 	position: relative;
-	/* padding-top: 80px; */
 	padding-bottom: 9px;
 	background: url(../img/sprite.png) -50px -48px no-repeat;
 	margin-top: 80px;
@@ -162,7 +164,7 @@ h3 {
 .cart-block a {
 	text-decoration: none;
 	color: #000000;
-	font-weight: 600;
+	font-weight: 500;
 	font-style: normal;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -290,7 +292,7 @@ h3 {
 		font-size: 55px;
 		font-family: 'roboto','Arial',sans-serif;
 		font-style: normal;
-		font-weight: 600;
+		font-weight: 500;
 		line-height: 62px;
 		color: #000000;
 		margin-bottom: 23px;
@@ -990,7 +992,7 @@ button:focus {
 }
 
 .main-footer {
-	padding-top: 71px;
+	padding-top: 67px;
 	padding-bottom: 68px;
 }
 
@@ -1005,7 +1007,7 @@ button:focus {
 	font-size: 55px;
 	color: #000000;
 	font-family: 'roboto','Arial',sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-style: normal;
 }
 
@@ -1138,7 +1140,7 @@ button:focus {
 }
 
 .catalog-item-container {
-	margin-bottom: 23px;
+	margin-bottom: 29px;
 }
 
 .range-till {
@@ -1281,16 +1283,23 @@ button:focus {
 	font-style: normal;
 	font-size: 16px;
 	color: #283136;
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
-.product-types-row:hover {
+.product-types-row:hover input[type="radio"] + label.product-types-label:before {
 	opacity: 1;
 } 
 
+.product-types-row:hover input[type="checkbox"] + label.product-features-label:before {
+	opacity: 1;
+} 
+
+.product-types-row:hover span {
+	color: #000000;
+} 
+
 .product-types-row {
-	margin-bottom: 22px;
-	opacity: 0.6;
+	margin-bottom: 21px;
 }
 
 .product-types .product-types-row:last-child {
@@ -1313,6 +1322,7 @@ input[type="radio"] + label.product-types-label:before {
 	position: absolute;
 	margin-left: -35px;
 	top: -5px;
+	opacity: 0.6;
 }
 
 .product-types-label:hover {
@@ -1341,6 +1351,7 @@ input[type="checkbox"] + label.product-features-label:before {
 	vertical-align: middle;
 	position: absolute;
 	margin-left: -35px;
+	opacity: 0.6;
 }
 
 input[type="checkbox"]:checked + label.product-features-label:before {
@@ -1377,7 +1388,7 @@ input[type="checkbox"]:checked:hover {
 	text-decoration: none;
 	color: #000000;
 	font-family: 'roboto','Arial',sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px;
 	font-style: normal;
 	text-transform: uppercase;
@@ -1405,7 +1416,7 @@ input[type="checkbox"]:checked:hover {
 	text-decoration: none;
 	color: #000000;
 	font-family: 'roboto','Arial',sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px; 
 	font-style: normal;
 	text-transform: uppercase;
@@ -1420,7 +1431,7 @@ input[type="checkbox"]:checked:hover {
 	text-decoration: none;
 	color: #000000;
 	font-family: 'roboto','Arial',sans-serif;
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 16px; 
 	font-style: normal;
 	text-transform: uppercase;
@@ -1496,6 +1507,7 @@ input[type="checkbox"]:checked:hover {
 	display: inline-block;
 	vertical-align: middle;
 	width: 50%;
+	text-transform: uppercase;
 }
 
 .max-price {
